@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-application"></div>  
+        <div id="chat-app">
+            <h2 class="heading">Join Room</h2>
+        <div id="room-selection">
+            <input type="text" id="username" placeholder="Enter your username" />
+            <select id="room">
+                <option value="Room1">Room 1</option>
+                <option value="Room2">Room 2</option>
+                <option value="Room3">Room 3</option>
+            </select>
+            <button id="join-room">Join Room</button>
+        </div>
+            <div id="add">
+                <h2 class="heading">Create Room</h2>
+                <input type="text" id="new-room"  placeholder="Enter room name">
+                <button id="create-new-room">Create New Room</button>
+            </div>
+        
+    </div>
+        <div id="chat-room" class="hidden">
+            <div id="room-info">
+                <h2 id="current-room">Room</h2>
+                <h2 id="current-user">You</h2>
+               <ul id="users"></ul>
+            
+            </div>
+            <div id="messages">
+            
+            </div>
+            <input type="text" id="message" placeholder="Type your message" />
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
