@@ -58,5 +58,5 @@ npm install express socket.io
 ### **Setup Steps**
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-repo/chat-app.git
-   cd chat-app
+   git clone https://github.com/Sky607/Chat-Application.git
+ 
