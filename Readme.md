@@ -12,7 +12,7 @@ A real-time chat application that allows users to join chat rooms, send messages
    - Chat room interface includes:
      - Room list.
      - Message display area.
-     - Input field for sending messages.
+     - Input field for sending messages
 
 2. **Real-Time Communication:**
    - Real-time messaging using WebSockets.
