@@ -10,7 +10,7 @@ let rooms = {}; // Stores users in each room
 // Serve static files
 app.use(express.static("public"));
 
-// Handle WebSocket connections
+
 io.on("connection", (socket) => {
    // Handle user joining a room
 socket.on("joinRoom", ({ username, room }) => {

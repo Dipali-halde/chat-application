@@ -49,7 +49,7 @@ socket.on("newMessage", ({ username, message, timestamp }) => {
     const messageContent = document.createElement("div");
     messageContent.classList.add(username === currentLoggedUser ? 'message-right' : 'message-left');
     messageContent.textContent = `${message}`;
-     // Add the timestamp to the message
+     
      const UserDiv = document.createElement("div");
      UserDiv.classList.add("user");
      UserDiv.textContent = (username === currentLoggedUser ? `You : ${timestamp}` : `${username} : ${timestamp}`);
